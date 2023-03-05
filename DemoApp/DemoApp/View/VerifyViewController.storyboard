@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="VerifyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="VerifyViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mG9-dd-ku8" customClass="CustomNavigationBarView" customModule="DemoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jhY-IH-6FS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khs-DH-PKW" customClass="BasicButton" customModule="DemoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="799" width="390" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dFZ-Az-TG1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-0000-0000로 전송된 인증번호를 입력해 주세요." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgu-yJ-4bL">
+                                <rect key="frame" x="20" y="131" width="350" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="q5N-CG-Npr">
+                                <rect key="frame" x="20" y="211.66666666666666" width="350" height="18.666666666666657"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-oh-va2" customClass="VerifyNumberTextField" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="56.666666666666664" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="hpj-1I-eTe"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="plQ-6P-HdH" customClass="VerifyNumberTextField" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="58.666666666666671" y="0.0" width="56.666666666666671" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="KsE-HM-82p"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDD-qW-Z3H" customClass="VerifyNumberTextField" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="117.33333333333336" y="0.0" width="56.666666666666671" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="g9y-ic-1pz"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-aU-UuM" customClass="VerifyNumberTextField" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="176" y="0.0" width="56.666666666666657" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="Whc-us-S5A"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BpE-xf-FEA" customClass="VerifyNumberTextField" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="234.66666666666666" y="0.0" width="56.666666666666657" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="QiH-NT-bE9"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9X-Rd-5ez" customClass="VerifyNumberTextField" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="293.33333333333331" y="0.0" width="56.666666666666686" height="18.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="QRe-yP-ZvH"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mG9-dd-ku8" secondAttribute="trailing" id="3Ac-UN-Wvs"/>
+                            <constraint firstItem="Fgu-yJ-4bL" firstAttribute="top" secondItem="mG9-dd-ku8" secondAttribute="bottom" constant="40" id="4ip-uU-9jT"/>
+                            <constraint firstItem="mG9-dd-ku8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BYO-lw-6mY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="khs-DH-PKW" secondAttribute="trailing" id="CEk-45-8Zz"/>
+                            <constraint firstItem="q5N-CG-Npr" firstAttribute="top" secondItem="Fgu-yJ-4bL" secondAttribute="bottom" constant="40" id="ONE-It-EDF"/>
+                            <constraint firstItem="khs-DH-PKW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Rsg-bA-awd"/>
+                            <constraint firstAttribute="bottom" secondItem="khs-DH-PKW" secondAttribute="bottom" id="X45-Kz-5sB"/>
+                            <constraint firstItem="mG9-dd-ku8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XUt-ki-bES"/>
+                            <constraint firstItem="q5N-CG-Npr" firstAttribute="leading" secondItem="Fgu-yJ-4bL" secondAttribute="leading" id="ZL7-KH-Rld"/>
+                            <constraint firstItem="q5N-CG-Npr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gqT-fU-4wm"/>
+                            <constraint firstItem="Fgu-yJ-4bL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hvf-0I-pXf"/>
+                            <constraint firstItem="q5N-CG-Npr" firstAttribute="trailing" secondItem="Fgu-yJ-4bL" secondAttribute="trailing" id="zCc-jP-cO8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customNavigationBarView" destination="mG9-dd-ku8" id="rBO-y2-bXF"/>
+                        <outlet property="fifthTextField" destination="BpE-xf-FEA" id="SSh-yl-Ef4"/>
+                        <outlet property="firstNumberTextField" destination="ph2-oh-va2" id="lP3-MB-scM"/>
+                        <outlet property="forthTextField" destination="h0a-aU-UuM" id="qwk-AZ-8bp"/>
+                        <outlet property="nextButton" destination="khs-DH-PKW" id="RSg-Sn-eod"/>
+                        <outlet property="nextButtonBottomConstraint" destination="X45-Kz-5sB" id="MWu-hH-em8"/>
+                        <outlet property="secondTextField" destination="plQ-6P-HdH" id="svF-38-CNH"/>
+                        <outlet property="sixTextField" destination="G9X-Rd-5ez" id="Qcv-p5-bnj"/>
+                        <outlet property="thirdTextField" destination="TDD-qW-Z3H" id="Ktk-5K-CUP"/>
+                        <outlet property="verifyDescriptionLabel" destination="Fgu-yJ-4bL" id="M5r-fr-slv"/>
+                        <outletCollection property="verifyTextFieldCollection" destination="h0a-aU-UuM" collectionClass="NSMutableArray" id="7Va-GK-jKA"/>
+                        <outletCollection property="verifyTextFieldCollection" destination="BpE-xf-FEA" collectionClass="NSMutableArray" id="y62-qd-sku"/>
+                        <outletCollection property="verifyTextFieldCollection" destination="G9X-Rd-5ez" collectionClass="NSMutableArray" id="CPp-1m-vfL"/>
+                        <outletCollection property="verifyTextFieldCollection" destination="TDD-qW-Z3H" collectionClass="NSMutableArray" id="yyt-7r-W0J"/>
+                        <outletCollection property="verifyTextFieldCollection" destination="plQ-6P-HdH" collectionClass="NSMutableArray" id="kYL-DA-wWo"/>
+                        <outletCollection property="verifyTextFieldCollection" destination="ph2-oh-va2" collectionClass="NSMutableArray" id="jB0-H5-Mb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-29.23076923076923" y="-21.327014218009477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
